@@ -90,9 +90,6 @@ export class RegisterPage extends Component {
               {' '}
               <Link to="/login" className="text-indigo-600 underline">Login</Link>
             </div>
-            {/* <div className="mb-40 pt-5">
-              {' '}
-            </div> */}
           </form>
         </div>
         <br />
