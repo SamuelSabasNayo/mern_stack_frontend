@@ -28,17 +28,17 @@ export class LoginPage extends Component {
     if (this.props.isAuthenticated) return <Redirect to="/" />;
     return (
       <div className="h-screen w-screen bg-gradient-to-r from-yellow-500 via-red-500 to-indigo-700">
-        <div className="h-1/2 w-1/3 mx-auto bg-white relative top-40">
+        <div className="h-2/3 w-2/5 mx-auto bg-white relative top-20">
           <h2 className="text-2xl text-center pt-8 font-bold">Login</h2>
           <form
-            className="pt-8 w-9/12 mx-auto min-width-20"
+            className="pt-5 w-9/12 mx-auto min-width-20"
             onSubmit={this.onSubmit}
           >
             <div className="pb-2">
               <label className="block">Email</label>
               <input
                 type="email"
-                className="border-4 mb-2 w-full p-2"
+                className="border-4 mb-1 w-full p-2"
                 name="email"
                 onChange={this.onChange}
                 value={email}
@@ -48,14 +48,14 @@ export class LoginPage extends Component {
               <label className="block">Password</label>
               <input
                 type="password"
-                className="border-4 mb-2 w-full p-2"
+                className="border-4 mb-1 w-full p-2"
                 name="password"
                 onChange={this.onChange}
                 value={password}
               />
             </div>
-            <div className="pt-7">
-              <button className="bg-yellow-500 w-full p-4 text-xl" type="submit">Login</button>
+            <div className="pt-5">
+              <button className="bg-yellow-500 w-full p-3 text-xl" type="submit">Login</button>
             </div>
             <div className="flex w-11/12">
               <div className="flex-1 pt-8">

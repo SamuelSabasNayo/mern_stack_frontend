@@ -25,11 +25,11 @@ export class RegisterPage extends Component {
     const { firstname, lastname, email, password, confirmPassword } = this.state;
     // console.log(this.state);
     return (
-      <div className="h-screen w-screen bg-gradient-to-r from-yellow-500 via-red-500 to-indigo-700">
-        <div className="h-2/3 w-1/3 mx-auto bg-white relative top-40">
+      <div className="w-screen bg-gradient-to-r from-yellow-500 via-red-500 to-indigo-700">
+        <div className="w-2/5 mx-auto bg-white relative top-20">
           <h2 className="text-2xl text-center pt-8 font-bold">Register</h2>
           <form
-            className="pt-5 w-9/12 mx-auto min-width-20"
+            className="pt-5 w-9/12 mx-auto min-width-20 mb-5"
             onSubmit={this.onSubmit}
           >
             <div className="pb-2">
@@ -83,15 +83,19 @@ export class RegisterPage extends Component {
               />
             </div>
             <div className="pt-5">
-              <button className="bg-yellow-500 w-full p-4 text-xl" type="submit">Register</button>
+              <button className="bg-yellow-500 w-full p-3 text-xl" type="submit">Register</button>
             </div>
-            <div className="pt-5 text-lg">
+            <div className="mb-40 pt-5 pb-20 text-lg">
               Already have an account?
               {' '}
               <Link to="/login" className="text-indigo-600 underline">Login</Link>
             </div>
+            {/* <div className="mb-40 pt-5">
+              {' '}
+            </div> */}
           </form>
         </div>
+        <br />
       </div>
     );
   }
